@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data></data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <TextView
+        android:id="@+id/createNewAccountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Create a new account"/>
+    <TextView
+        android:id="@+id/paragraphText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createNewAccountText"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Please put your information below to create a new account for using app"
+
+        />
+    <EditText
+        android:id="@+id/bankName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paragraphText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/outline_edittext_back"
+        android:fontFamily="@font/poppins_regular"
+        android:inputType="textMultiLine"
+        android:textColor="#2C2B4B"
+        android:textSize="14sp"
+        android:hint="Bank Name"/>
+    <EditText
+        android:id="@+id/branchName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/outline_edittext_back"
+        android:fontFamily="@font/poppins_regular"
+        android:inputType="textMultiLine"
+        android:textColor="#2C2B4B"
+        android:textSize="14sp"
+        android:hint="Branch Name"/>
+    <EditText
+        android:id="@+id/routingNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/branchName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/outline_edittext_back"
+        android:fontFamily="@font/poppins_regular"
+        android:inputType="textMultiLine"
+        android:textColor="#2C2B4B"
+        android:textSize="14sp"
+        android:hint="Routing Number"/>
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/routingNumber"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Create Account"/>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

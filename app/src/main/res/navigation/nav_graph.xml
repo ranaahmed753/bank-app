@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="edu.notes.bankapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_createBankAccountFragment"
+            app:destination="@id/createBankAccountFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_updateBankAccountFragment"
+            app:destination="@id/updateBankAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createBankAccountFragment"
+        android:name="edu.notes.bankapp.CreateBankAccountFragment"
+        android:label="fragment_create_bank_account"
+        tools:layout="@layout/fragment_create_bank_account" >
+        <action
+            android:id="@+id/action_createBankAccountFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateBankAccountFragment"
+        android:name="edu.notes.bankapp.UpdateBankAccountFragment"
+        android:label="fragment_update_bank_account"
+        tools:layout="@layout/fragment_update_bank_account" >
+        <action
+            android:id="@+id/action_updateBankAccountFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
