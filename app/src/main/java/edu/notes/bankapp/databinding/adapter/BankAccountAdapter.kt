@@ -9,7 +9,8 @@ import edu.notes.bankapp.databinding.viewholder.BankAccountViewHolder
 import edu.notes.bankapp.entity.BankEntity
 import edu.notes.bankapp.utility.fadeInAnim
 
-class BankAccountAdapter(private val context: Context,private val bankList:List<BankEntity>):RecyclerView.Adapter<BankAccountViewHolder>() {
+class BankAccountAdapter(private val context: Context,private var bankList:List<BankEntity>):RecyclerView.Adapter<BankAccountViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BankAccountViewHolder {
         val binding=ChildItemBinding.inflate(LayoutInflater.from(context),parent,false)
         return BankAccountViewHolder(binding,context)

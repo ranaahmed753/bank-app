@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.SearchView
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -25,6 +26,7 @@ class HomeFragment : Fragment() {
 private lateinit var binding:FragmentHomeBinding
 private lateinit var bankAccountAdapter:BankAccountAdapter
 private var bankViewModel:BankViewModel?=null
+    private lateinit var list:ArrayList<BankEntity>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,11 +42,15 @@ private var bankViewModel:BankViewModel?=null
         bankViewModel=ViewModelProvider(requireActivity())[BankViewModel::class.java]
         binding.recyclerView.setHasFixedSize(true)
         binding.recyclerView.layoutManager=StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
-        bankViewModel!!.getAllBankLiveData().observe(requireActivity(), Observer {allBanks->
-            bankAccountAdapter= BankAccountAdapter(requireActivity(),allBanks)
+        bankViewModel!!.getAllBankLiveData().observe(requireActivity(), Observer {bankList->
+            list= arrayListOf()
+            list= bankList as ArrayList<BankEntity>
+            bankAccountAdapter= BankAccountAdapter(requireActivity(), list)
             binding.recyclerView.adapter=bankAccountAdapter
             bankAccountAdapter.notifyDataSetChanged()
-            if(allBanks.size==0){
+
+
+            if(list.size==0){
                 toast(requireActivity(),"No accound found!")
             }
         })
@@ -52,6 +58,23 @@ private var bankViewModel:BankViewModel?=null
         binding.addButton.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_createBankAccountFragment)
         }
+
+        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                if(newText!!.length!=0){
+                    bankViewModel!!.searchBank(newText)
+                    bankAccountAdapter.notifyDataSetChanged()
+                }
+                return true
+            }
+
+
+        })
 
     }
 

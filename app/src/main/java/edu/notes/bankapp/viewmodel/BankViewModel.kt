@@ -31,4 +31,8 @@ class BankViewModel @Inject constructor(
     fun deleteBankAccount(id:Int){
         bankRepository.deleteBankAccount(id)
     }
+
+    fun searchBank(searchText: String){
+        bankRepository.searchBank(searchText)
+    }
 }
