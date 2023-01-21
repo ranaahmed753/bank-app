@@ -20,6 +20,9 @@ interface BankDao {
     @Query("DELETE FROM bank_account where id=:id")
     fun deleteBankAccount(id: Int)
 
+    @Query("SELECT * FROM bank_account where bankName=:searchText")
+    fun searchBank(searchText:String):LiveData<List<BankEntity>>
+
 
 
 }

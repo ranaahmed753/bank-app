@@ -22,4 +22,8 @@ class BankRepository @Inject constructor(
     fun deleteBankAccount(id:Int){
         bankDao.deleteBankAccount(id)
     }
+
+    fun searchBank(searchText: String):LiveData<List<BankEntity>>{
+        return bankDao.searchBank(searchText)
+    }
 }
