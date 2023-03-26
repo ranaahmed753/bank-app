@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/fontColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Font Color :"
+            android:textSize="15sp"
+            android:textColor="#121212"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="start"
+            />
+        <TextView
+            android:id="@+id/blackColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black"
+            android:textSize="14sp"
+            android:textColor="#121212"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="start"
+            />
+        <TextView
+            android:id="@+id/grayColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gray"
+            android:textSize="14sp"
+            android:textColor="#121212"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="start"
+            />
+        <TextView
+            android:id="@+id/lightGrayColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light Gray"
+            android:textSize="14sp"
+            android:textColor="#121212"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="start"
+            />
+        <TextView
+            android:id="@+id/ebonyColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ebony"
+            android:textSize="14sp"
+            android:textColor="#121212"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="start"
+            />
+        <TextView
+            android:id="@+id/oxfordBlueColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oxford Blue"
+            android:textSize="14sp"
+            android:textColor="#121212"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="start"
+            />
+
+        <TextView
+            android:id="@+id/darkPurpleColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Purple"
+            android:textSize="14sp"
+            android:textColor="#121212"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="start"
+            />
+        <TextView
+            android:id="@+id/blueBrightGrayColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue-Bright-Gray"
+            android:textSize="14sp"
+            android:textColor="#121212"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="start"
+            />
+
+
+    </LinearLayout>
+</layout>

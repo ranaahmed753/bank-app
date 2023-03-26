@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="12sp"
-        android:text="Update Your Bank Information"
+        android:text="Update your note"
         android:padding="4dp"
         android:layout_marginLeft="5dp"
         android:textColor="@color/black"
@@ -35,7 +35,7 @@
         android:inputType="textMultiLine"
         android:textColor="#2C2B4B"
         android:textSize="14sp"
-        android:hint="bank name"/>
+        android:hint="note title"/>
     <EditText
         android:id="@+id/branchNameEdittext"
         android:layout_width="match_parent"
@@ -51,7 +51,7 @@
         android:inputType="textMultiLine"
         android:textColor="#2C2B4B"
         android:textSize="14sp"
-        android:hint="branch name"/>
+        android:hint="note category"/>
     <EditText
         android:id="@+id/routingNumberEdittext"
         android:layout_width="match_parent"
@@ -67,7 +67,7 @@
         android:inputType="textMultiLine"
         android:textColor="#2C2B4B"
         android:textSize="14sp"
-        android:hint="routing number"/>
+        android:hint="note description"/>
     <Button
         android:id="@+id/updateButton"
         android:layout_width="match_parent"
@@ -78,6 +78,6 @@
         android:fontFamily="@font/poppins_regular"
         android:textSize="12sp"
         android:layout_margin="8dp"
-        android:text="Update Account"/>
+        android:text="Update Note"/>
 </LinearLayout>
 </layout>
