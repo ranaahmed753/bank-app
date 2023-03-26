@@ -70,6 +70,9 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
     implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
 
+    //drawable builder for painting
+    implementation 'com.github.duanhong169:drawabletoolbox:1.0.7'
+
 
 
 }

@@ -3,22 +3,42 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/beige_color_back.xml" value="0.18333333333333332" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/child_item_ripple.xml" value="0.240625" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/delete_back.xml" value="0.19114583333333332" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/green_color_back.xml" value="0.18333333333333332" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/ic_delete.xml" value="0.18333333333333332" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/ic_edit.xml" value="0.1398148148148148" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/ic_font.xml" value="0.18333333333333332" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/ic_menu.xml" value="0.18055555555555555" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/ic_text_color.xml" value="0.17864583333333334" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/ic_theme.xml" value="0.18333333333333332" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/lilac_color_back.xml" value="0.18333333333333332" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/ltblue_color_back.xml" value="0.18333333333333332" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/outline_edittext_back.xml" value="0.16458333333333333" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/purple_color_back.xml" value="0.12685185185185185" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/recycler_item_back.xml" value="0.19270833333333334" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/red_color_back.xml" value="0.1398148148148148" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/update_back.xml" value="0.19114583333333332" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/violet_color_back.xml" value="0.1398148148148148" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/drawable/yellow_color_back.xml" value="0.18333333333333332" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/activity_main.xml" value="0.24114583333333334" />
-        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/child_item.xml" value="0.22447916666666667" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/child_item.xml" value="0.33" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/custom_popup.xml" value="0.2265625" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/delete_account_popup.xml" value="0.14322916666666666" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/font_color_popup.xml" value="0.19479166666666667" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/font_family_popup.xml" value="0.2140625" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/fragment_blank_details.xml" value="0.2552083333333333" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/fragment_create_bank_account.xml" value="0.22" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/fragment_signin.xml" value="0.2552083333333333" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/fragment_signup.xml" value="0.2552083333333333" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/fragment_splash_screen.xml" value="0.25" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/fragment_update_bank_account.xml" value="0.2552083333333333" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/not_found.xml" value="0.18659420289855072" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/theme_popup.xml" value="0.18070652173913043" />
         <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/layout/update_account_popup.xml" value="0.14322916666666666" />
+        <entry key="..\:/Intern Project Android/Banking App/Bank App/app/src/main/res/menu/recyclerview_card_menu.xml" value="0.2552083333333333" />
       </map>
     </option>
   </component>

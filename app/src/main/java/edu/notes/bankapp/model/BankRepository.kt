@@ -26,4 +26,20 @@ class BankRepository @Inject constructor(
     fun searchBank(searchText: String):LiveData<List<BankEntity>>{
         return bankDao.searchBank(searchText)
     }
+
+    fun updateColor(color: String,id: Int){
+        bankDao.updateColor(color,id)
+    }
+
+    fun updateFontFamily(font: Int,id: Int){
+        bankDao.updateFontFamily(font,id)
+    }
+
+    fun updateFontColor(fontColor: String,id: Int){
+        bankDao.updateFontColor(fontColor,id)
+    }
+
+    fun toggleLike(likeStatus: String,id: Int){
+        bankDao.toggleLike(likeStatus,id)
+    }
 }

@@ -12,6 +12,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import edu.notes.bankapp.dao.BankDao
 import edu.notes.bankapp.database.BankDatabase
+import edu.notes.bankapp.databinding.adapter.BankAccountAdapter
 import edu.notes.bankapp.entity.BankEntity
 import edu.notes.bankapp.view.MainActivity
 import edu.notes.bankapp.viewmodel.BankViewModel
@@ -35,5 +36,10 @@ object AppModule {
        return bankDatabase.bankDao()
     }
 
+    @Singleton
+    @Provides
+    fun provideAdapter(context: Application,list:List<BankEntity>):BankAccountAdapter{
+        return BankAccountAdapter(context,list)
+    }
 
 }

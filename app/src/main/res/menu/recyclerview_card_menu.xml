@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/edit"
+        android:title="Edit"
+        android:textSize="10sp"
+        android:fontFamily="@font/poppins_regular"
+        android:icon="@drawable/ic_edit"/>
+    <item
+        android:id="@+id/delete"
+        android:title="Delete"
+        android:textSize="10sp"
+        android:fontFamily="@font/poppins_regular"
+        android:icon="@drawable/ic_delete"/>
+    <item
+        android:id="@+id/theme"
+        android:title="Theme"
+        android:textSize="10sp"
+        android:fontFamily="@font/poppins_regular"
+        android:icon="@drawable/ic_theme"/>
+    <item
+        android:id="@+id/font"
+        android:title="Font"
+        android:textSize="10sp"
+        android:fontFamily="@font/poppins_regular"
+        android:icon="@drawable/ic_font"
+        />
+    <item
+        android:id="@+id/fontColor"
+        android:title="Font Color"
+        android:textSize="10sp"
+        android:fontFamily="@font/poppins_regular"
+        android:icon="@drawable/ic_text_color"
+        />
+</menu>

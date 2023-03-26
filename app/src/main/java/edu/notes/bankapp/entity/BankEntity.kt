@@ -13,5 +13,15 @@ data class BankEntity(
     @ColumnInfo(name = "branchName")
     val branchName:String,
     @ColumnInfo(name = "routingNumber")
-    val routingNumber:String
+    val routingNumber:String,
+    @ColumnInfo(name = "color")
+    val color: String,
+    @ColumnInfo(name = "font")
+    val font: Int,
+    @ColumnInfo(name = "date")
+    val date:String,
+    @ColumnInfo(name = "fontColor")
+    val fontColor: String,
+    @ColumnInfo(name = "likeStatus")
+    val likeStatus: String
 )

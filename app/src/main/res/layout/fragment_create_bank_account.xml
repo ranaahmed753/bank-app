@@ -8,19 +8,37 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     >
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/purple_700"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/noteAppText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginLeft="10dp"
+            android:text="Note"/>
+    </Toolbar>
 
     <TextView
         android:id="@+id/createNewAccountText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:fontFamily="@font/poppins_semibold"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="50dp"
-        android:text="Create a new account"/>
+        android:text="Create a new note"/>
     <TextView
         android:id="@+id/paragraphText"
         android:layout_width="wrap_content"
@@ -32,7 +50,7 @@
         android:fontFamily="@font/poppins_regular"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="Please put your information below to create a new account for using app"
+        android:text="Please put your information below to create a new note for using app"
 
         />
     <EditText
@@ -51,7 +69,7 @@
         android:inputType="textMultiLine"
         android:textColor="#2C2B4B"
         android:textSize="14sp"
-        android:hint="Bank Name"/>
+        android:hint="note title"/>
     <EditText
         android:id="@+id/branchName"
         android:layout_width="match_parent"
@@ -68,7 +86,7 @@
         android:inputType="textMultiLine"
         android:textColor="#2C2B4B"
         android:textSize="14sp"
-        android:hint="Branch Name"/>
+        android:hint="note category"/>
     <EditText
         android:id="@+id/routingNumber"
         android:layout_width="match_parent"
@@ -85,7 +103,7 @@
         android:inputType="textMultiLine"
         android:textColor="#2C2B4B"
         android:textSize="14sp"
-        android:hint="Routing Number"/>
+        android:hint="note description"/>
     <Button
         android:id="@+id/createAccountButton"
         android:layout_width="match_parent"
@@ -98,7 +116,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
-        android:text="Create Account"/>
+        android:text="Create Note"/>
     
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

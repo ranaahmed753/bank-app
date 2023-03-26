@@ -32,7 +32,23 @@ class BankViewModel @Inject constructor(
         bankRepository.deleteBankAccount(id)
     }
 
-    fun searchBank(searchText: String){
-        bankRepository.searchBank(searchText)
+    fun searchBank(searchText: String):LiveData<List<BankEntity>>{
+        return bankRepository.searchBank(searchText)
+    }
+
+    fun updateColor(color: String,id: Int){
+        bankRepository.updateColor(color,id)
+    }
+
+    fun updateFontFamily(font: Int,id: Int){
+        bankRepository.updateFontFamily(font,id)
+    }
+
+    fun updateFontColor(fontColor: String,id: Int){
+        bankRepository.updateFontColor(fontColor,id)
+    }
+
+    fun toggleLike(likeStatus: String,id: Int){
+        bankRepository.toggleLike(likeStatus,id)
     }
 }
